@@ -10,6 +10,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/home.css">
 </head>
 <body>
     <!-- Loading Screen -->
@@ -17,7 +18,7 @@
         <div class="loading-content">
             <div class="loading-logo">
                 <i class="fas fa-shipping-fast"></i>
-                <h2>GlobalLogistics</h2>
+                <h2>Trans-Siberian Shipping Company</h2>
             </div>
             <div class="loading-progress">
                 <div class="progress-bar"></div>
@@ -29,8 +30,7 @@
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <i class="fas fa-shipping-fast"></i>
-                <span>GlobalLogistics</span>
+                <img src="./attached_assets/Logo/Trans-Siberian Shipping LLC.png" alt="">
             </div>
             <div class="nav-menu" id="nav-menu">
                 <a href="index.html" class="nav-link active">Home</a>
@@ -49,124 +49,40 @@
         </div>
     </nav>
 
-    <!-- Image Carousel Section -->
-    <section class="hero-carousel" id="hero-carousel">
-        <div class="carousel-container">
-            <div class="carousel-track" id="carousel-track">
-                <div class="carousel-slide active">
-                    <div class="slide-background">
-                        <div class="slide-overlay"></div>
-                        <div class="slide-image" style="background: linear-gradient(135deg, rgba(10, 61, 145, 0.8), rgba(88, 179, 255, 0.6)), url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 1200 600%22><rect fill=%22%230A3D91%22 width=%221200%22 height=%22600%22/><path fill=%22%2358B3FF%22 opacity=%220.3%22 d=%22M0,200 Q300,100 600,200 T1200,200 L1200,600 L0,600 Z%22/></svg>'); background-size: cover; background-position: center;"></div>
-                    </div>
-                    <div class="slide-content">
-                        <h1 class="slide-title">Global Logistics Excellence</h1>
-                        <p class="slide-subtitle">Connecting continents through innovative supply chain solutions</p>
-                        <div class="slide-buttons">
-                            <a href="services.html" class="btn btn-primary btn-large ripple-effect">
-                                <span>Explore Services</span>
-                                <i class="fas fa-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-slide">
-                    <div class="slide-background">
-                        <div class="slide-overlay"></div>
-                        <div class="slide-image" style="background: linear-gradient(135deg, rgba(46, 204, 113, 0.8), rgba(39, 174, 96, 0.6)), url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 1200 600%22><rect fill=%22%232ECC71%22 width=%221200%22 height=%22600%22/><circle fill=%22%2327AE60%22 opacity=%220.4%22 cx=%22300%22 cy=%22150%22 r=%22100%22/><circle fill=%22%2327AE60%22 opacity=%220.3%22 cx=%22900%22 cy=%22400%22 r=%22150%22/></svg>'); background-size: cover; background-position: center;"></div>
-                    </div>
-                    <div class="slide-content">
-                        <h1 class="slide-title">Sustainable Future</h1>
-                        <p class="slide-subtitle">Leading the industry toward carbon-neutral logistics by 2030</p>
-                        <div class="slide-buttons">
-                            <a href="sustainability.html" class="btn btn-secondary btn-large ripple-effect">
-                                <span>Learn More</span>
-                                <i class="fas fa-leaf"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-slide">
-                    <div class="slide-background">
-                        <div class="slide-overlay"></div>
-                        <div class="slide-image" style="background: linear-gradient(135deg, rgba(88, 179, 255, 0.8), rgba(30, 79, 160, 0.6)), url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 1200 600%22><rect fill=%22%2358B3FF%22 width=%221200%22 height=%22600%22/><polygon fill=%22%231E4FA0%22 opacity=%220.4%22 points=%22200,100 400,200 300,350 100,250%22/><polygon fill=%22%231E4FA0%22 opacity=%220.3%22 points=%22800,150 1100,250 1000,450 700,350%22/></svg>'); background-size: cover; background-position: center;"></div>
-                    </div>
-                    <div class="slide-content">
-                        <h1 class="slide-title">Global Network</h1>
-                        <p class="slide-subtitle">500+ terminals connecting 150+ countries worldwide</p>
-                        <div class="slide-buttons">
-                            <a href="terminals.html" class="btn btn-primary btn-large ripple-effect">
-                                <span>View Terminals</span>
-                                <i class="fas fa-globe"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-navigation">
-                <button class="carousel-btn prev-btn" id="carousel-prev">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-                <div class="carousel-dots" id="carousel-dots">
-                    <span class="carousel-dot active" data-slide="0"></span>
-                    <span class="carousel-dot" data-slide="1"></span>
-                    <span class="carousel-dot" data-slide="2"></span>
-                </div>
-                <button class="carousel-btn next-btn" id="carousel-next">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
-            </div>
-        </div>
-    </section>
+<div class="carousel">
+    <div class="slides" id="slides">
+      <div class="slide" style="background-image: url('./attached_assets/Home \page \pictures/RUID68c7cf49bec44805868b9a08cff6479e.jpg');">
+        <div class="overlay"></div>
+      </div>
+      <div class="slide" style="background-image: url('./attached_assets/Home \page \pictures/RUIDae36d8b28e114faeb25ff1dd2d9f48e3.jpg');">
+        <div class="overlay"></div>
+      </div>
+      <div class="slide" style="background-image: url('./attached_assets/Home \page \pictures/RUIDfd13e1c899ba483f988a3d6725ef43e5.jpg')">
+        <div class="overlay"></div>
+      </div>
+    </div>
 
-    <!-- Hero Section -->
-    <section class="hero" id="hero">
-        <div class="hero-background">
-            <div class="hero-overlay"></div>
-            <div class="floating-particles">
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-            </div>
-        </div>
-        <div class="hero-content">
-            <div class="hero-text" data-aos="fade-up" data-aos-duration="1000">
-                <h1 class="hero-title">
-                    <span class="title-line">Global Logistics</span>
-                    <span class="title-line gradient-text">Solutions</span>
-                </h1>
-                <p class="hero-subtitle">Connecting the world through innovative supply chain solutions and cutting-edge technology</p>
-                <div class="hero-buttons">
-                    <a href="services.html" class="btn btn-primary ripple-effect">
-                        <span>Explore Services</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                    <a href="contact.html" class="btn btn-secondary ripple-effect">
-                        <span>Get Quote</span>
-                        <i class="fas fa-calculator"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="hero-stats" data-aos="fade-up" data-aos-delay="500">
-                <div class="stat-item">
-                    <div class="stat-number" data-count="150">0</div>
-                    <div class="stat-label">Countries Served</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number" data-count="50000">0</div>
-                    <div class="stat-label">Shipments Monthly</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number" data-count="99.9">0</div>
-                    <div class="stat-label">% On-Time Delivery</div>
-                </div>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <div class="scroll-arrow"></div>
-        </div>
-    </section>
+    <!-- Constant Content -->
+    <div class="content">
+      <h1>Welcome to Trans-Siberian Shipping</h1>
+      <h2><i>"Delivering Beyond Borders"
+</i>
+</h2>
+      <p>Seamless global shipping across oceans, rails, and skies.
+</p>
+      <div class="buttons">
+        <button class="btn">Learn More</button>
+      <button class="btn">Contact Us</button>
+      </div>
+    </div>
+
+    <!-- Navigation Dots -->
+    <div class="dots">
+      <div class="dot active" onclick="goToSlide(0)"></div>
+      <div class="dot" onclick="goToSlide(1)"></div>
+      <div class="dot" onclick="goToSlide(2)"></div>
+    </div>
+  </div>
 
     <!-- Services Section -->
     <section class="services-section" id="services">
@@ -386,7 +302,7 @@
         </div>
     </section>
 
-    <!-- Footer -->
+     <!-- Footer -->
     <footer class="footer">
         <div class="footer-background">
             <div class="footer-overlay"></div>
@@ -395,10 +311,9 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="footer-logo">
-                        <i class="fas fa-shipping-fast"></i>
-                        <span>GlobalLogistics</span>
+                        <img src="./attached_assets/Logo/Trans-Siberian Shipping LLC (White).png" alt="">
                     </div>
-                    <p class="footer-description">Leading the future of global logistics with innovative solutions and exceptional service.</p>
+                    <p class="footer-description">Leading the future of global logistics with innovative, sustainable solutions and exceptional service.</p>
                     <div class="social-links">
                         <a href="#" class="social-link" aria-label="LinkedIn">
                             <i class="fab fa-linkedin-in"></i>
@@ -421,6 +336,7 @@
                         <li><a href="services.html">Air Freight</a></li>
                         <li><a href="services.html">Land Transport</a></li>
                         <li><a href="services.html">Warehousing</a></li>
+                        <li><a href="services.html">Cold Chain</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -430,6 +346,7 @@
                         <li><a href="sustainability.html">Sustainability</a></li>
                         <li><a href="responsibility.html">Responsibility</a></li>
                         <li><a href="terminals.html">Terminals</a></li>
+                        <li><a href="careers.html">Careers</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -457,13 +374,74 @@
                         <a href="#">Privacy Policy</a>
                         <a href="#">Terms of Service</a>
                         <a href="#">Cookie Policy</a>
+                        <a href="#">Sustainability Report</a>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- Scripts -->
+      <script>
+    let currentIndex = 0;
+const slides = document.getElementById('slides');
+const slideElements = document.querySelectorAll('.slide');
+const dots = document.querySelectorAll('.dot');
+const totalSlides = slideElements.length;
+
+// Clone first and last slide for seamless loop
+const firstClone = slideElements[0].cloneNode(true);
+const lastClone = slideElements[totalSlides - 1].cloneNode(true);
+
+slides.appendChild(firstClone);
+slides.insertBefore(lastClone, slideElements[0]);
+
+// Update to include clones
+const allSlides = document.querySelectorAll('.slide');
+let slideCount = allSlides.length;
+
+// Start at first real slide
+slides.style.transform = `translateX(-100%)`;
+let index = 1;
+
+function updateDots() {
+  dots.forEach(dot => dot.classList.remove('active'));
+  dots[(index - 1 + totalSlides) % totalSlides].classList.add('active');
+}
+
+function moveToSlide(newIndex) {
+  index = newIndex;
+  slides.style.transition = 'transform 1s ease-in-out';
+  slides.style.transform = `translateX(-${index * 100}%)`;
+  updateDots();
+}
+
+// Handle infinite loop transitions
+slides.addEventListener('transitionend', () => {
+  if (allSlides[index].isEqualNode(firstClone)) {
+    slides.style.transition = 'none';
+    index = 1;
+    slides.style.transform = `translateX(-100%)`;
+  }
+  if (allSlides[index].isEqualNode(lastClone)) {
+    slides.style.transition = 'none';
+    index = totalSlides;
+    slides.style.transform = `translateX(-${index * 100}%)`;
+  }
+});
+
+function nextSlide() {
+  moveToSlide(index + 1);
+}
+
+function goToSlide(dotIndex) {
+  moveToSlide(dotIndex + 1); // +1 because of clone offset
+}
+
+// Auto slide every 5s
+setInterval(nextSlide, 5000);
+
+updateDots();
+  </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/main.js"></script>
     <script src="js/animations.js"></script>

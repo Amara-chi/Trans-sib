@@ -1,0 +1,154 @@
+/* Services Overview Section */
+.services-overview-section {
+    padding: var(--spacing-5xl) 0;
+    background-color: var(--bg-light);
+}
+
+.overview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-xl);
+    margin-top: var(--spacing-3xl);
+}
+
+.overview-card {
+    background: var(--bg-white);
+    border-radius: var(--border-radius-xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    transition: all var(--transition-normal);
+    display: flex;
+    flex-direction: column;
+}
+
+.overview-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-2xl);
+}
+
+.card-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--gradient-primary);
+    border-radius: var(--border-radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-size-xl);
+    color: var(--text-white);
+    margin: var(--spacing-xl);
+    position: relative;
+    z-index: 2;
+}
+
+.ocean-card .card-icon {
+    background: var(--secondary-dark);
+}
+
+.air-card .card-icon {
+    background: var(--secondary-dark);
+}
+
+.land-card .card-icon {
+    background: var(--secondary-dark);
+}
+
+.warehouse-card .card-icon {
+    background: var(--secondary-dark);
+}
+
+.card-content {
+    padding: 0 var(--spacing-xl) var(--spacing-xl);
+    position: relative;
+    z-index: 2;
+}
+
+.card-content h3 {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-sm);
+    color: var(--text-dark);
+}
+
+.card-content p {
+    color: var(--text-light);
+    line-height: 1.6;
+    margin-bottom: var(--spacing-lg);
+}
+
+.card-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+}
+
+.stat-item {
+    background: rgba(10, 61, 145, 0.05);
+    padding: var(--spacing-sm);
+    border-radius: var(--border-radius-md);
+    text-align: center;
+}
+
+.stat-number {
+    font-size: var(--font-size-lg);
+    font-weight: 700;
+    color: var(--primary-color);
+    display: block;
+    margin-bottom: var(--spacing-xs);
+}
+
+.stat-label {
+    font-size: var(--font-size-xs);
+    color: var(--text-light);
+    font-weight: 500;
+}
+
+.card-image {
+    height: 180px;
+    position: relative;
+    overflow: hidden;
+    margin-top: auto;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-slow);
+}
+
+.overview-card:hover .card-image img {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .overview-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .overview-card {
+        flex-direction: row;
+    }
+    
+    .card-image {
+        width: 40%;
+        height: auto;
+    }
+    
+    .card-content {
+        width: 60%;
+        padding: var(--spacing-xl);
+    }
+}
+
+@media (max-width: 576px) {
+    .overview-card {
+        flex-direction: column;
+    }
+    
+    .card-image,
+    .card-content {
+        width: 100%;
+    }
+}

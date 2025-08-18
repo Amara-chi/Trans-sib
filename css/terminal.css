@@ -1,0 +1,172 @@
+.map-container {
+    z-index: 0 !important;
+}
+
+/* Terminal Capabilities Section */
+.capabilities-section {
+    padding: var(--spacing-5xl) 0;
+    background-color: var(--bg-light);
+}
+
+.capabilities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--spacing-xl);
+    margin-top: var(--spacing-3xl);
+}
+
+.capability-card {
+    background: var(--bg-white);
+    border-radius: var(--border-radius-xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    transition: all var(--transition-normal);
+    display: flex;
+    flex-direction: column;
+}
+
+.capability-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-2xl);
+}
+
+.card-header {
+    padding: var(--spacing-xl);
+    background: var(--gradient-primary);
+    color: var(--text-white);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-lg);
+}
+
+.card-icon {
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: var(--border-radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-size-lg);
+}
+
+.card-header h3 {
+    margin: 0;
+    font-size: var(--font-size-xl);
+}
+
+.card-body {
+    padding: var(--spacing-xl);
+    flex-grow: 1;
+}
+
+.card-body p {
+    color: var(--text-light);
+    margin-bottom: var(--spacing-lg);
+}
+
+.capability-features {
+    list-style: none;
+}
+
+.capability-features li {
+    padding: var(--spacing-sm) 0;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.capability-features i {
+    color: var(--accent-color);
+}
+
+.card-footer {
+    padding: 0 var(--spacing-xl) var(--spacing-xl);
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .capabilities-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Network Advantages Section */
+.network-advantages {
+    padding: var(--spacing-5xl) 0;
+    background: var(--gradient-primary);
+    color: var(--text-white);
+    position: relative;
+    overflow: hidden;
+}
+
+.network-advantages .section-title,
+.network-advantages .section-subtitle {
+    color: var(--text-white);
+}
+
+.advantages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-xl);
+    margin-top: var(--spacing-3xl);
+}
+
+.advantage-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: var(--border-radius-xl);
+    padding: var(--spacing-xl);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all var(--transition-normal);
+    text-align: center;
+}
+
+.advantage-card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: var(--shadow-xl);
+}
+
+.hexagon {
+    width: 80px;
+    height: 80px;
+    background: var(--text-white);
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    margin: 0 auto var(--spacing-lg);
+    font-size: var(--font-size-xl);
+    transition: all var(--transition-normal);
+}
+
+.advantage-card:hover .hexagon {
+    background: var(--accent-color);
+    color: var(--text-white);
+}
+
+.advantage-content h3 {
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--spacing-md);
+}
+
+.advantage-content p {
+    opacity: 0.9;
+    font-size: var(--font-size-sm);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .advantages-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .advantages-grid {
+        grid-template-columns: 1fr;
+    }
+}

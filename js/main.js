@@ -1,4 +1,9 @@
 // Main JavaScript functionality for GlobalLogistics website
+AOS.init({
+  duration: 800,
+  once: true
+});
+
 
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize all components

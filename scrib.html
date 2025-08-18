@@ -10,14 +10,650 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/sustainabilty.css">
+    <style>
+        /* Enhanced Sustainability Page Styles */
+        :root {
+            --primary-green: #2ecc71;
+            --dark-green: #27ae60;
+            --light-green: #d5f5e3;
+            --ocean-blue: #3498db;
+            --dark-blue: #2980b9;
+            --charcoal: #2c3e50;
+            --light-gray: #ecf0f1;
+            --medium-gray: #bdc3c7;
+            --white: #ffffff;
+            --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            --transition: all 0.3s ease;
+        }
+        
+        .sustainability-header {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./attached_assets/Images/sustainability-hero.jpg') center/cover no-repeat;
+            min-height: 400px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .page-title {
+            color: var(--white);
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .page-subtitle {
+            color: var(--light-gray);
+            font-size: 1.5rem;
+            max-width: 700px;
+            margin-bottom: 2rem;
+        }
+        
+        /* Commitment Section */
+        .commitment-section {
+            padding: 5rem 0;
+            background-color: var(--light-gray);
+        }
+        
+        .commitment-content {
+            display: flex;
+            gap: 3rem;
+            align-items: center;
+        }
+        
+        .commitment-text {
+            flex: 1;
+        }
+        
+        .commitment-visual {
+            flex: 1;
+        }
+        
+        .commitment-description {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: var(--charcoal);
+            margin: 1.5rem 0;
+        }
+        
+        .commitment-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .stat-item {
+            background: var(--white);
+            border-radius: 10px;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        
+        .stat-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .stat-icon {
+            font-size: 2rem;
+            color: var(--primary-green);
+            margin-bottom: 1rem;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--charcoal);
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            font-size: 1rem;
+            color: var(--medium-gray);
+        }
+        
+        .sustainability-graphic img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+        
+        /* Initiatives Section */
+        .initiatives-section {
+            padding: 5rem 0;
+            background-color: var(--white);
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            color: var(--charcoal);
+            margin-bottom: 1rem;
+        }
+        
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: var(--medium-gray);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .initiatives-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .initiative-card {
+            background: var(--white);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border-top: 4px solid var(--primary-green);
+        }
+        
+        .initiative-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .card-header {
+            padding: 1.5rem;
+            background-color: var(--light-green);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .card-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: var(--white);
+        }
+        
+        .card-icon.energy {
+            background-color: var(--ocean-blue);
+        }
+        
+        .card-icon.fleet {
+            background-color: var(--dark-green);
+        }
+        
+        .card-icon.waste {
+            background-color: #e67e22;
+        }
+        
+        .card-icon.community {
+            background-color: #9b59b6;
+        }
+        
+        .card-header h3 {
+            font-size: 1.5rem;
+            color: var(--charcoal);
+            margin: 0;
+        }
+        
+        .card-body {
+            padding: 1.5rem;
+        }
+        
+        .card-body p {
+            color: var(--charcoal);
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+        
+        .progress-container {
+            margin-top: 1.5rem;
+        }
+        
+        .progress-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            color: var(--medium-gray);
+        }
+        
+        .progress-bar {
+            height: 8px;
+            background-color: #f1f1f1;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background-color: var(--primary-green);
+            border-radius: 4px;
+            transition: width 1s ease;
+        }
+        
+        /* Roadmap Section */
+        .roadmap-section {
+            padding: 5rem 0;
+            background-color: var(--light-gray);
+        }
+        
+        .roadmap-container {
+            position: relative;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .roadmap-progress {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 100%;
+            width: 4px;
+            background-color: var(--medium-gray);
+            z-index: 1;
+        }
+        
+        .progress-line {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 0;
+            width: 100%;
+            background-color: var(--primary-green);
+            z-index: 2;
+            transition: height 1s ease;
+        }
+        
+        .roadmap-items {
+            position: relative;
+            z-index: 3;
+            padding: 3rem 0;
+        }
+        
+        .roadmap-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+        
+        .roadmap-item:nth-child(odd) {
+            flex-direction: row-reverse;
+            text-align: right;
+        }
+        
+        .timeline-marker {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: var(--white);
+            border: 4px solid var(--primary-green);
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 4;
+        }
+        
+        .roadmap-item.completed .timeline-marker {
+            background-color: var(--primary-green);
+        }
+        
+        .roadmap-item.current .timeline-marker {
+            background-color: var(--ocean-blue);
+            border-color: var(--ocean-blue);
+        }
+        
+        .timeline-content {
+            width: calc(50% - 40px);
+            padding: 2rem;
+            background-color: var(--white);
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+        
+        .timeline-year {
+            font-size: 1rem;
+            color: var(--primary-green);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .timeline-content h3 {
+            font-size: 1.5rem;
+            color: var(--charcoal);
+            margin-bottom: 1rem;
+        }
+        
+        .timeline-content p {
+            color: var(--charcoal);
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        
+        .achievements {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 1.5rem;
+        }
+        
+        .achievements li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--charcoal);
+        }
+        
+        .achievements li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--primary-green);
+            font-weight: bold;
+        }
+        
+        .roadmap-item:nth-child(odd) .achievements li {
+            padding-left: 0;
+            padding-right: 1.5rem;
+        }
+        
+        .roadmap-item:nth-child(odd) .achievements li:before {
+            left: auto;
+            right: 0;
+        }
+        
+        /* Certifications Section */
+        .certifications-section {
+            padding: 5rem 0;
+            background-color: var(--white);
+        }
+        
+        .certifications-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .certification-card {
+            background: var(--white);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+            text-align: center;
+            border: 1px solid #eee;
+        }
+        
+        .certification-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .certification-logo {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 1.5rem;
+        }
+        
+        .certification-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        
+        .certification-info h4 {
+            font-size: 1.3rem;
+            color: var(--charcoal);
+            margin-bottom: 0.5rem;
+        }
+        
+        .certification-info p {
+            color: var(--medium-gray);
+            margin-bottom: 0.5rem;
+        }
+        
+        .certification-year {
+            display: inline-block;
+            background-color: var(--light-green);
+            color: var(--dark-green);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        
+        /* Impact Section */
+        .impact-section {
+            padding: 5rem 0;
+            background-color: var(--light-gray);
+        }
+        
+        .impact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .impact-card {
+            background: var(--white);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .impact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .impact-visual {
+            margin-bottom: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .impact-icon {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background-color: var(--light-green);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: var(--primary-green);
+            margin-bottom: 1rem;
+        }
+        
+        .impact-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--charcoal);
+            margin-bottom: 0.5rem;
+        }
+        
+        .impact-details h3 {
+            font-size: 1.3rem;
+            color: var(--charcoal);
+            margin-bottom: 0.5rem;
+        }
+        
+        .impact-details p {
+            color: var(--medium-gray);
+            font-size: 0.9rem;
+        }
+        
+        /* CTA Section */
+        .sustainability-cta {
+            position: relative;
+            padding: 5rem 0;
+            color: var(--white);
+            text-align: center;
+        }
+        
+        .green-gradient {
+            background: linear-gradient(135deg, var(--primary-green), var(--dark-blue));
+        }
+        
+        .cta-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3);
+        }
+        
+        .cta-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .cta-title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .cta-subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.8rem 1.8rem;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .btn-light {
+            background-color: var(--white);
+            color: var(--primary-green);
+        }
+        
+        .btn-outline-light {
+            background-color: transparent;
+            color: var(--white);
+            border: 2px solid var(--white);
+        }
+        
+        .btn-large {
+            padding: 1rem 2.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn i {
+            margin-left: 0.5rem;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .commitment-content {
+                flex-direction: column;
+            }
+            
+            .roadmap-item, .roadmap-item:nth-child(odd) {
+                flex-direction: column;
+                text-align: left;
+                margin-bottom: 2rem;
+            }
+            
+            .timeline-content {
+                width: 100%;
+                margin-top: 1.5rem;
+            }
+            
+            .roadmap-progress {
+                left: 30px;
+            }
+            
+            .timeline-marker {
+                left: 30px;
+            }
+            
+            .roadmap-item:nth-child(odd) .achievements li {
+                padding-right: 0;
+                padding-left: 1.5rem;
+            }
+            
+            .roadmap-item:nth-child(odd) .achievements li:before {
+                right: auto;
+                left: 0;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .page-title {
+                font-size: 2.5rem;
+            }
+            
+            .page-subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .commitment-stats {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
 </head>
 <body>
-        <!-- Navigation -->
+    <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <img src="./attached_assets/Logo/Trans-Siberian Shipping LLC.png" alt="">
+                <i class="fas fa-shipping-fast"></i>
+                <span>GlobalLogistics</span>
             </div>
             <div class="nav-menu" id="nav-menu">
                 <a href="index.html" class="nav-link">Home</a>
@@ -87,7 +723,7 @@
                 </div>
                 <div class="commitment-visual" data-aos="fade-left">
                     <div class="sustainability-graphic">
-                        <img src="./attached_assets/img22.jpg" alt="Sustainability infographic showing our environmental impact reductions">
+                        <img src="./attached_assets/Images/sustainability-graphic.png" alt="Sustainability infographic showing our environmental impact reductions">
                     </div>
                 </div>
             </div>
@@ -405,7 +1041,8 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="footer-logo">
-                        <img src="./attached_assets/Logo/Trans-Siberian Shipping LLC (White).png" alt="">
+                        <i class="fas fa-shipping-fast"></i>
+                        <span>GlobalLogistics</span>
                     </div>
                     <p class="footer-description">Leading the future of global logistics with innovative, sustainable solutions and exceptional service.</p>
                     <div class="social-links">

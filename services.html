@@ -10,14 +10,14 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/services.css">
 </head>
 <body>
-    <!-- Navigation -->
+        <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <i class="fas fa-shipping-fast"></i>
-                <span>GlobalLogistics</span>
+                <img src="./attached_assets/Logo/Trans-Siberian Shipping LLC.png" alt="">
             </div>
             <div class="nav-menu" id="nav-menu">
                 <a href="index.html" class="nav-link">Home</a>
@@ -54,56 +54,112 @@
         </div>
     </section>
 
-    <!-- Services Overview -->
-    <section class="services-overview-section">
-        <div class="container">
-            <div class="overview-content">
-                <div class="overview-text" data-aos="fade-right">
-                    <h2 class="section-title">Complete Supply Chain Solutions</h2>
-                    <p class="overview-description">From ocean freight to last-mile delivery, we provide integrated logistics services that streamline your supply chain, reduce costs, and improve efficiency. Our global network and advanced technology ensure reliable, fast, and cost-effective transportation solutions.</p>
-                    <div class="overview-stats">
-                        <div class="overview-stat">
-                            <h3 class="stat-number" data-count="99.8">0</h3>
-                            <p class="stat-label">% Service Reliability</p>
+<!-- Services Overview -->
+<section class="services-overview-section">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <h2 class="section-title">Our Integrated Logistics Network</h2>
+            <p class="section-subtitle">Seamless end-to-end supply chain solutions across all transportation modes</p>
+        </div>
+        <div class="overview-grid">
+            <!-- Overview Card 1 -->
+            <div class="overview-card ocean-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-icon">
+                    <i class="fas fa-ship"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Ocean Freight</h3>
+                    <p>Global container shipping with competitive rates and reliable schedules for all cargo types.</p>
+                    <div class="card-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">99.7%</span>
+                            <span class="stat-label">On-time delivery</span>
                         </div>
-                        <div class="overview-stat">
-                            <h3 class="stat-number" data-count="150">0</h3>
-                            <p class="stat-label">Countries Covered</p>
-                        </div>
-                        <div class="overview-stat">
-                            <h3 class="stat-number" data-count="24">0</h3>
-                            <p class="stat-label">Hours Support</p>
+                        <div class="stat-item">
+                            <span class="stat-number">150+</span>
+                            <span class="stat-label">Ports served</span>
                         </div>
                     </div>
                 </div>
-                <div class="overview-visual" data-aos="fade-left">
-                    <div class="services-diagram">
-                        <div class="service-node ocean">
-                            <i class="fas fa-ship"></i>
-                            <span>Ocean</span>
+                <div class="card-image">
+                    <img src="./attached_assets/img9.jpg" alt="Container ship at sea">
+                </div>
+            </div>
+
+            <!-- Overview Card 2 -->
+            <div class="overview-card air-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="card-icon">
+                    <i class="fas fa-plane"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Air Freight</h3>
+                    <p>Express air cargo solutions with priority handling for time-sensitive shipments.</p>
+                    <div class="card-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Operations</span>
                         </div>
-                        <div class="service-node air">
-                            <i class="fas fa-plane"></i>
-                            <span>Air</span>
-                        </div>
-                        <div class="service-node land">
-                            <i class="fas fa-truck"></i>
-                            <span>Land</span>
-                        </div>
-                        <div class="service-node warehouse">
-                            <i class="fas fa-warehouse"></i>
-                            <span>Warehouse</span>
-                        </div>
-                        <div class="connecting-lines">
-                            <div class="line line-1"></div>
-                            <div class="line line-2"></div>
-                            <div class="line line-3"></div>
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Airline partners</span>
                         </div>
                     </div>
+                </div>
+                <div class="card-image">
+                    <img src="./attached_assets/img8.jpg" alt="Cargo plane loading">
+                </div>
+            </div>
+
+            <!-- Overview Card 3 -->
+            <div class="overview-card land-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="card-icon">
+                    <i class="fas fa-truck"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Land Transport</h3>
+                    <p>Comprehensive road and rail solutions for domestic and cross-border shipments.</p>
+                    <div class="card-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">10,000+</span>
+                            <span class="stat-label">Vehicles</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">30+</span>
+                            <span class="stat-label">Countries</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-image">
+                    <img src="./attached_assets/img7.jpg" alt="Truck on highway">
+                </div>
+            </div>
+
+            <!-- Overview Card 4 -->
+            <div class="overview-card warehouse-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="card-icon">
+                    <i class="fas fa-warehouse"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Warehousing</h3>
+                    <p>Strategic storage and distribution centers with advanced inventory management.</p>
+                    <div class="card-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">5M+</span>
+                            <span class="stat-label">Square feet</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Inventory accuracy</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-image">
+                    <img src="./attached_assets/img6.jpg" alt="Modern warehouse interior">
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Service Categories Tabs -->
     <section class="service-tabs-section">
@@ -561,7 +617,7 @@
         </div>
     </section>
 
-    <!-- Footer -->
+ <!-- Footer -->
     <footer class="footer">
         <div class="footer-background">
             <div class="footer-overlay"></div>
@@ -570,10 +626,9 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="footer-logo">
-                        <i class="fas fa-shipping-fast"></i>
-                        <span>GlobalLogistics</span>
+                        <img src="./attached_assets/Logo/Trans-Siberian Shipping LLC (White).png" alt="">
                     </div>
-                    <p class="footer-description">Leading the future of global logistics with innovative solutions and exceptional service.</p>
+                    <p class="footer-description">Leading the future of global logistics with innovative, sustainable solutions and exceptional service.</p>
                     <div class="social-links">
                         <a href="#" class="social-link" aria-label="LinkedIn">
                             <i class="fab fa-linkedin-in"></i>
@@ -596,6 +651,7 @@
                         <li><a href="services.html">Air Freight</a></li>
                         <li><a href="services.html">Land Transport</a></li>
                         <li><a href="services.html">Warehousing</a></li>
+                        <li><a href="services.html">Cold Chain</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -605,6 +661,7 @@
                         <li><a href="sustainability.html">Sustainability</a></li>
                         <li><a href="responsibility.html">Responsibility</a></li>
                         <li><a href="terminals.html">Terminals</a></li>
+                        <li><a href="careers.html">Careers</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -632,6 +689,7 @@
                         <a href="#">Privacy Policy</a>
                         <a href="#">Terms of Service</a>
                         <a href="#">Cookie Policy</a>
+                        <a href="#">Sustainability Report</a>
                     </div>
                 </div>
             </div>

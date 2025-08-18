@@ -1,7 +1,7 @@
-
-
-
-
+[data-aos] {
+  opacity: 1 !important;
+  transform: none !important;
+}
 
 
 /* CSS Custom Properties */
@@ -151,235 +151,6 @@
 
 
 
-/* Hero Carousel Styles */
-.hero-carousel {
-    position: relative;
-    height: 100vh;
-    min-height: 600px;
-    overflow: hidden;
-    background: var(--bg-dark);
-}
-
-.carousel-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-.carousel-track {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-
-.carousel-slide {
-    position: relative;
-    min-width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.8s ease-in-out;
-}
-
-.carousel-slide.active {
-    opacity: 1;
-}
-
-.slide-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-}
-
-.slide-image {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.slide-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.4);
-    z-index: 2;
-}
-
-.slide-content {
-    position: relative;
-    z-index: 3;
-    text-align: center;
-    color: var(--text-white);
-    max-width: 800px;
-    padding: 0 var(--spacing-lg);
-    animation: slideContentFadeIn 1s ease-out 0.3s both;
-}
-
-.slide-title {
-    font-size: var(--font-size-5xl);
-    font-weight: 800;
-    margin-bottom: var(--spacing-lg);
-    line-height: 1.2;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-.slide-subtitle {
-    font-size: var(--font-size-xl);
-    font-weight: 300;
-    margin-bottom: var(--spacing-2xl);
-    opacity: 0.9;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-}
-
-.slide-buttons {
-    display: flex;
-    gap: var(--spacing-lg);
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.btn-large {
-    padding: var(--spacing-lg) var(--spacing-2xl);
-    font-size: var(--font-size-lg);
-    font-weight: 600;
-    border-radius: var(--border-radius-xl);
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    display: inline-flex;
-    align-items: center;
-    gap: var(--spacing-sm);
-    transition: all var(--transition-normal);
-    box-shadow: var(--shadow-lg);
-}
-
-.btn-large:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-2xl);
-}
-
-.carousel-navigation {
-    position: absolute;
-    bottom: var(--spacing-2xl);
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    align-items: center;
-    gap: var(--spacing-lg);
-    z-index: 4;
-}
-
-.carousel-btn {
-    width: 50px;
-    height: 50px;
-    background: rgba(255, 255, 255, 0.1);
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    border-radius: 50%;
-    color: var(--text-white);
-    font-size: var(--font-size-lg);
-    cursor: pointer;
-    transition: all var(--transition-normal);
-    backdrop-filter: blur(10px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.carousel-btn:hover {
-    background: rgba(255, 255, 255, 0.2);
-    border-color: rgba(255, 255, 255, 0.5);
-    transform: scale(1.1);
-}
-
-.carousel-dots {
-    display: flex;
-    gap: var(--spacing-sm);
-    padding: 0 var(--spacing-lg);
-}
-
-.carousel-dot {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.3);
-    cursor: pointer;
-    transition: all var(--transition-normal);
-    border: 2px solid transparent;
-}
-
-.carousel-dot.active {
-    background: var(--text-white);
-    transform: scale(1.2);
-    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
-}
-
-.carousel-dot:hover {
-    background: rgba(255, 255, 255, 0.6);
-    transform: scale(1.1);
-}
-
-@keyframes slideContentFadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-
-
-
-
-
-
-/* Responsive Carousel */
-@media (max-width: 768px) {
-    .hero-carousel {
-        height: 70vh;
-        min-height: 500px;
-    }
-    
-    .slide-title {
-        font-size: var(--font-size-3xl);
-    }
-    
-    .slide-subtitle {
-        font-size: var(--font-size-lg);
-    }
-    
-    .slide-buttons {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .btn-large {
-        width: 100%;
-        max-width: 280px;
-    }
-    
-    .carousel-navigation {
-        bottom: var(--spacing-lg);
-    }
-    
-    .carousel-btn {
-        width: 40px;
-        height: 40px;
-        font-size: var(--font-size-base);
-    }
-}
 
 html {
     scroll-behavior: smooth;
@@ -446,7 +217,8 @@ body {
 }
 
 .loading-progress {
-    width: 200px;
+    width: 500px;
+    margin-left: 30px;
     height: 4px;
     background: rgba(255, 255, 255, 0.2);
     border-radius: var(--border-radius-full);
@@ -559,18 +331,9 @@ p {
     padding-right: var(--spacing-md);
 }
 
-.nav-logo {
-    display: flex;
-    align-items: center;
-    gap: var(--spacing-sm);
-    font-size: var(--font-size-xl);
-    font-weight: 700;
-    color: var(--primary-color);
-    text-decoration: none;
-}
-
-.nav-logo i {
-    font-size: var(--font-size-2xl);
+.nav-logo img {
+    width: 150%;
+    height: 50px;
 }
 
 .nav-menu {
@@ -704,8 +467,8 @@ p {
 
 .btn-outline {
     background: transparent;
-    color: var(--primary-color);
-    border: 2px solid var(--primary-color);
+    color: white;
+    border: 2px solid white;
 }
 
 .btn-outline:hover {
@@ -1397,13 +1160,13 @@ section {
 
 .carousel-dots {
     display: flex;
-    gap: var(--spacing-sm);
+    gap: var(--spacing-sm);;
 }
 
 .dot {
     width: 12px;
     height: 12px;
-    background: var(--border-color);
+    background-color: rgb(142, 185, 224) !important;
     border-radius: var(--border-radius-full);
     cursor: pointer;
     transition: all var(--transition-normal);
@@ -1411,7 +1174,7 @@ section {
 
 .dot.active,
 .dot:hover {
-    background: var(--primary-color);
+    background: var(--primary-color) !important;
 }
 
 
@@ -1734,7 +1497,7 @@ section {
 .terminals-cta,
 .services-cta,
 .contact-cta {
-    background: var(--gradient-primary);
+    background: var(--gradient-primary) !important;
     color: var(--text-white);
     text-align: center;
     position: relative;
@@ -1830,18 +1593,10 @@ section {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.footer-logo {
-    display: flex;
-    align-items: center;
-    gap: var(--spacing-sm);
-    font-size: var(--font-size-xl);
-    font-weight: 700;
-    margin-bottom: var(--spacing-lg);
-}
-
-.footer-logo i {
-    font-size: var(--font-size-2xl);
-    color: var(--secondary-color);
+.footer-logo img {
+    margin-left: 30px;
+    width: 150px;
+    height: 70px;
 }
 
 .footer-description {
@@ -1950,7 +1705,7 @@ section {
 
 /* Sustainability Specific Styles */
 .sustainability-header {
-    background: var(--gradient-accent);
+    background: var(--gradient-primary);
 }
 
 .green-card {
@@ -2854,7 +2609,7 @@ section {
 .impact-map {
     background: var(--bg-white);
     border-radius: var(--border-radius-xl);
-    padding: var(--spacing-3xl);
+    padding: 0 !important;
     box-shadow: var(--shadow-lg);
     display: flex;
     align-items: center;
@@ -2864,6 +2619,7 @@ section {
 .map-placeholder {
     text-align: center;
     color: var(--text-light);
+    padding: 0 !important;
 }
 
 .map-placeholder i {

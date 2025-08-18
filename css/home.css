@@ -1,0 +1,110 @@
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+     body, html {
+      width: 100%;
+      height: 100%;
+      overflow-x: hidden;
+    }
+
+    .carousel {
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .buttons{
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slides {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s ease-in-out;
+}
+
+.slide {
+  flex: 0 0 100%; /* Each slide takes 100% of the carousel */
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+    /* Overlay */
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+      .carousel-slide img {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    /* Content */
+    .content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #fff;
+      z-index: 2;
+    }
+
+    .content h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .content p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    .content .btn{
+        background-color: var(--primary-color);
+        color: var(--text-color);
+        text-wrap: nowrap;
+    }
+    /* Navigation */
+    .dots {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 8px;
+      z-index: 3;
+    }
+
+    .dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #fff;
+      opacity: 0.6;
+      cursor: pointer;
+    }
+
+    .dot.active { opacity: 1; background: #e63946; }
+
+     /* Responsive */
+    @media (max-width: 768px) {
+      .content h1 { font-size: 2rem; }
+      .content h2 { font-size: 1.5rem; }
+      .content p { font-size: 1rem; }
+    }
+    @media (max-width: 480px) {
+      .content h1 { font-size: 2rem; }
+      .content h2 { font-size: 1.2rem; }
+      .content p { font-size: 0.9rem; }
+    }
