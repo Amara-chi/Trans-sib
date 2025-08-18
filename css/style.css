@@ -2577,10 +2577,16 @@ section {
 }
 
 .progress-fill {
+    transition: width 2s ease-out !important;
     height: 100%;
     background: var(--gradient-primary);
     border-radius: var(--border-radius-full);
-    transition: width 2s ease-out;
+    will-change: width;
+}
+
+/* Prevent animation reset on hover/focus */
+.progress-fill:hover, .progress-fill:focus {
+    width: var(--target-width) !important;
 }
 
 .blue-progress {
