@@ -1,5 +1,17 @@
+
+
+
+
+
+
 /* CSS Custom Properties */
 :root {
+    
+    
+    
+    
+    
+    
     /* Colors */
     --primary-color: #0A3D91;
     --primary-light: #1e4fa0;
@@ -20,11 +32,23 @@
     --shadow-color: rgba(0, 0, 0, 0.1);
     --shadow-color-dark: rgba(0, 0, 0, 0.2);
     
+    
+    
+    
+    
+    
+    
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     --gradient-accent: linear-gradient(135deg, var(--accent-color), var(--accent-light));
     --gradient-hero: linear-gradient(135deg, rgba(10, 61, 145, 0.9), rgba(88, 179, 255, 0.9));
     --gradient-overlay: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
+    
+    
+    
+    
+    
+    
     
     /* Typography */
     --font-family: 'Poppins', sans-serif;
@@ -39,6 +63,12 @@
     --font-size-5xl: 3rem;
     --font-size-6xl: 4rem;
     
+    
+    
+    
+    
+    
+    
     /* Spacing */
     --spacing-xs: 0.25rem;
     --spacing-sm: 0.5rem;
@@ -50,6 +80,12 @@
     --spacing-4xl: 6rem;
     --spacing-5xl: 8rem;
     
+    
+    
+    
+    
+    
+    
     /* Borders */
     --border-radius-sm: 0.375rem;
     --border-radius-md: 0.5rem;
@@ -58,6 +94,12 @@
     --border-radius-2xl: 1.5rem;
     --border-radius-full: 9999px;
     
+    
+    
+    
+    
+    
+    
     /* Shadows */
     --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
     --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
@@ -65,10 +107,22 @@
     --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
     --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
     
+    
+    
+    
+    
+    
+    
     /* Transitions */
     --transition-fast: 0.15s ease-in-out;
     --transition-normal: 0.3s ease-in-out;
     --transition-slow: 0.5s ease-in-out;
+    
+    
+    
+    
+    
+    
     
     /* Z-index */
     --z-loading: 10000;
@@ -78,12 +132,24 @@
     --z-tooltip: 40;
 }
 
+
+
+
+
+
+
 /* Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+
+
+
+
+
 
 /* Hero Carousel Styles */
 .hero-carousel {
@@ -273,6 +339,12 @@
     }
 }
 
+
+
+
+
+
+
 /* Responsive Carousel */
 @media (max-width: 768px) {
     .hero-carousel {
@@ -322,6 +394,12 @@ body {
     background-color: var(--bg-white);
     overflow-x: hidden;
 }
+
+
+
+
+
+
 
 /* Loading Screen */
 .loading-screen {
@@ -393,6 +471,12 @@ body {
     100% { width: 100%; }
 }
 
+
+
+
+
+
+
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
@@ -427,12 +511,24 @@ p {
     color: var(--primary-color);
 }
 
+
+
+
+
+
+
 /* Container */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 var(--spacing-md);
 }
+
+
+
+
+
+
 
 /* Navigation */
 .navbar {
@@ -544,6 +640,12 @@ p {
     transform: rotate(-45deg) translate(6px, -6px);
 }
 
+
+
+
+
+
+
 /* Buttons */
 .btn {
     display: inline-flex;
@@ -638,6 +740,12 @@ p {
     font-size: var(--font-size-lg);
 }
 
+
+
+
+
+
+
 /* Ripple Effect */
 .ripple-effect {
     position: relative;
@@ -662,6 +770,12 @@ p {
     height: 300px;
 }
 
+
+
+
+
+
+
 /* Glass Effect */
 .glass-effect {
     background: rgba(255, 255, 255, 0.1);
@@ -669,6 +783,12 @@ p {
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: var(--shadow-lg);
 }
+
+
+
+
+
+
 
 /* Hero Section */
 .hero {
@@ -840,6 +960,12 @@ p {
     60% { transform: translateX(-50%) translateY(-5px); }
 }
 
+
+
+
+
+
+
 /* Page Header */
 .page-header {
     padding: var(--spacing-5xl) 0 var(--spacing-4xl);
@@ -909,6 +1035,12 @@ p {
     font-weight: 500;
 }
 
+
+
+
+
+
+
 /* Section Styles */
 section {
     padding: var(--spacing-5xl) 0;
@@ -950,6 +1082,12 @@ section {
     margin: 0 auto;
 }
 
+
+
+
+
+
+
 /* Grid Layouts */
 .services-grid {
     display: grid;
@@ -971,6 +1109,12 @@ section {
     gap: var(--spacing-xl);
     margin-top: var(--spacing-4xl);
 }
+
+
+
+
+
+
 
 /* Service Cards */
 .service-card {
@@ -1067,6 +1211,12 @@ section {
     color: var(--text-white);
 }
 
+
+
+
+
+
+
 /* Statistics Section */
 .stats-section {
     background: var(--gradient-primary);
@@ -1123,6 +1273,12 @@ section {
     font-weight: 700;
     margin-bottom: var(--spacing-xs);
 }
+
+
+
+
+
+
 
 /* Testimonials */
 .testimonials-section {
@@ -1258,6 +1414,12 @@ section {
     background: var(--primary-color);
 }
 
+
+
+
+
+
+
 /* Timeline */
 .timeline {
     position: relative;
@@ -1340,6 +1502,12 @@ section {
     margin-bottom: var(--spacing-md);
 }
 
+
+
+
+
+
+
 /* Value Cards */
 .value-card {
     background: var(--bg-white);
@@ -1367,6 +1535,12 @@ section {
     font-size: var(--font-size-xl);
     color: var(--text-white);
 }
+
+
+
+
+
+
 
 /* Team Cards */
 .team-card {
@@ -1447,6 +1621,12 @@ section {
     margin: 0;
 }
 
+
+
+
+
+
+
 /* Partners */
 .partners-grid {
     display: grid;
@@ -1482,6 +1662,12 @@ section {
     font-weight: 600;
     color: var(--text-dark);
 }
+
+
+
+
+
+
 
 /* FAQ */
 .faq-container {
@@ -1534,6 +1720,12 @@ section {
     max-height: 200px;
     padding: 0 var(--spacing-xl) var(--spacing-xl);
 }
+
+
+
+
+
+
 
 /* CTA Sections */
 .cta-section,
@@ -1595,10 +1787,17 @@ section {
     flex-wrap: wrap;
 }
 
+
+
+
+
+
+
 /* Footer */
 .footer {
     background: var(--bg-dark);
     color: var(--text-white);
+    padding-top: 100px;;
     position: relative;
     overflow: hidden;
 }
@@ -1743,6 +1942,12 @@ section {
     color: var(--text-white);
 }
 
+
+
+
+
+
+
 /* Sustainability Specific Styles */
 .sustainability-header {
     background: var(--gradient-accent);
@@ -1760,6 +1965,12 @@ section {
     background: var(--gradient-accent);
 }
 
+
+
+
+
+
+
 /* Responsibility Specific Styles */
 .responsibility-header {
     background: var(--gradient-primary);
@@ -1772,6 +1983,12 @@ section {
 .blue-bg {
     background: var(--gradient-primary);
 }
+
+
+
+
+
+
 
 /* Service Tabs */
 .service-tabs {
@@ -1884,6 +2101,12 @@ section {
     font-size: var(--font-size-sm);
 }
 
+
+
+
+
+
+
 /* Comparison Table */
 .comparison-table-container {
     overflow-x: auto;
@@ -1955,6 +2178,12 @@ section {
     font-size: var(--font-size-lg);
 }
 
+
+
+
+
+
+
 /* Technology Cards */
 .technology-grid {
     display: grid;
@@ -1989,6 +2218,12 @@ section {
     font-size: var(--font-size-xl);
     color: var(--text-white);
 }
+
+
+
+
+
+
 
 /* Contact Form */
 .contact-main-section {
@@ -2125,6 +2360,12 @@ section {
     opacity: 1;
 }
 
+
+
+
+
+
+
 /* Contact Info */
 .contact-cards {
     margin-bottom: var(--spacing-2xl);
@@ -2204,6 +2445,12 @@ section {
     background: var(--primary-color);
     color: var(--text-white);
 }
+
+
+
+
+
+
 
 /* Responsibility Page Styling */
 .responsibility-header {
@@ -2296,6 +2543,12 @@ section {
     font-weight: bold;
 }
 
+
+
+
+
+
+
 /* Safety Statistics Section */
 .safety-stats-section {
     padding: var(--spacing-5xl) 0;
@@ -2363,6 +2616,12 @@ section {
     color: var(--text-light);
     line-height: 1.5;
 }
+
+
+
+
+
+
 
 /* Community Programs Section */
 .community-programs-section {
@@ -2452,6 +2711,12 @@ section {
     color: var(--text-light);
     font-weight: 500;
 }
+
+
+
+
+
+
 
 /* Employee Development Section */
 .employee-development-section {
@@ -2567,6 +2832,12 @@ section {
     background: var(--gradient-primary);
 }
 
+
+
+
+
+
+
 /* Global Impact Section */
 .global-impact-section {
     padding: var(--spacing-5xl) 0;
@@ -2640,6 +2911,12 @@ section {
     font-weight: 600;
 }
 
+
+
+
+
+
+
 /* Reports Section */
 .reports-section {
     padding: var(--spacing-5xl) 0;
@@ -2708,6 +2985,12 @@ section {
     color: var(--primary-dark);
     transform: translateY(-2px);
 }
+
+
+
+
+
+
 
 /* Responsibility CTA */
 .responsibility-cta {
@@ -2788,6 +3071,12 @@ section {
     color: var(--primary-color);
 }
 
+
+
+
+
+
+
 /* Responsive Design for Responsibility Page */
 @media (max-width: 768px) {
     .commitments-grid {
@@ -2863,6 +3152,12 @@ section {
     }
 }
 
+
+
+
+
+
+
 /* Regional Offices */
 .offices-grid {
     display: grid;
@@ -2930,6 +3225,12 @@ section {
     font-weight: 500;
 }
 
+
+
+
+
+
+
 /* FAQ Grid */
 .faq-grid {
     display: grid;
@@ -2945,6 +3246,12 @@ section {
     margin: 0;
     font-size: var(--font-size-base);
 }
+
+
+
+
+
+
 
 /* Live Chat Widget */
 .live-chat-widget {
@@ -3100,6 +3407,12 @@ section {
     justify-content: center;
 }
 
+
+
+
+
+
+
 /* Map Styles */
 .map-container {
     position: relative;
@@ -3142,6 +3455,12 @@ section {
 .legend-color.air { background: #e74c3c; }
 .legend-color.land { background: #f39c12; }
 .legend-color.warehouse { background: #2ecc71; }
+
+
+
+
+
+
 
 /* Terminal Cards */
 .terminals-grid {
@@ -3239,6 +3558,12 @@ section {
     color: var(--primary-color);
     width: 16px;
 }
+
+
+
+
+
+
 
 /* Responsive Design */
 @media (max-width: 1200px) {
@@ -3444,6 +3769,12 @@ section {
         right: -50px;
     }
 }
+
+
+
+
+
+
 
 /* Print Styles */
 @media print {
