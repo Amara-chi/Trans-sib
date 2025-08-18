@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Terminals - GlobalLogistics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-shipping-fast"></i>
+                <span>GlobalLogistics</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="terminals.html" class="nav-link active">Terminals</a>
+                <a href="sustainability.html" class="nav-link">Sustainability</a>
+                <a href="responsibility.html" class="nav-link">Responsibility</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header terminals-header">
+        <div class="header-background">
+            <div class="header-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="header-content" data-aos="fade-up">
+                <h1 class="page-title">Global Terminal Network</h1>
+                <p class="page-subtitle">Strategic locations connecting major trade routes worldwide</p>
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span class="separator">/</span>
+                    <span class="current">Terminals</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Interactive Terminal Map</h2>
+                <p class="section-subtitle">Explore our global network of strategic terminals</p>
+            </div>
+            <div class="map-container" data-aos="fade-up" data-aos-delay="200">
+                <div id="terminals-map" class="terminals-map"></div>
+                <div class="map-legend">
+                    <div class="legend-item">
+                        <div class="legend-color ocean"></div>
+                        <span>Ocean Terminals</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color air"></div>
+                        <span>Air Cargo Hubs</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color land"></div>
+                        <span>Land Transport Hubs</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color warehouse"></div>
+                        <span>Distribution Centers</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Terminal Statistics -->
+    <section class="terminal-stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="terminal-stat-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="stat-icon">
+                        <i class="fas fa-anchor"></i>
+                    </div>
+                    <h3 class="stat-number" data-count="45">0</h3>
+                    <p class="stat-label">Ocean Terminals</p>
+                    <p class="stat-description">Major port facilities worldwide</p>
+                </div>
+                <div class="terminal-stat-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="stat-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h3 class="stat-number" data-count="120">0</h3>
+                    <p class="stat-label">Air Cargo Hubs</p>
+                    <p class="stat-description">Strategic airport locations</p>
+                </div>
+                <div class="terminal-stat-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="stat-icon">
+                        <i class="fas fa-warehouse"></i>
+                    </div>
+                    <h3 class="stat-number" data-count="200">0</h3>
+                    <p class="stat-label">Distribution Centers</p>
+                    <p class="stat-description">Warehousing facilities</p>
+                </div>
+                <div class="terminal-stat-card" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="stat-icon">
+                        <i class="fas fa-road"></i>
+                    </div>
+                    <h3 class="stat-number" data-count="300">0</h3>
+                    <p class="stat-label">Land Transport Hubs</p>
+                    <p class="stat-description">Rail and road connections</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Terminals -->
+    <section class="featured-terminals-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Featured Terminals</h2>
+                <p class="section-subtitle">Our flagship facilities setting industry standards</p>
+            </div>
+            <div class="terminals-grid">
+                <div class="terminal-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="terminal-image">
+                        <div class="image-placeholder ocean-terminal">
+                            <i class="fas fa-ship"></i>
+                        </div>
+                        <div class="terminal-type">
+                            <span class="type-badge ocean">Ocean Terminal</span>
+                        </div>
+                    </div>
+                    <div class="terminal-content">
+                        <h3 class="terminal-name">Port of Rotterdam Hub</h3>
+                        <p class="terminal-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Rotterdam, Netherlands
+                        </p>
+                        <p class="terminal-description">Europe's largest port facility with state-of-the-art container handling and automated systems.</p>
+                        <div class="terminal-features">
+                            <div class="feature-item">
+                                <i class="fas fa-boxes"></i>
+                                <span>15M TEU Capacity</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-robot"></i>
+                                <span>Automated Operations</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-leaf"></i>
+                                <span>Green Certified</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="terminal-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="terminal-image">
+                        <div class="image-placeholder air-terminal">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                        <div class="terminal-type">
+                            <span class="type-badge air">Air Cargo Hub</span>
+                        </div>
+                    </div>
+                    <div class="terminal-content">
+                        <h3 class="terminal-name">Hong Kong Air Cargo Center</h3>
+                        <p class="terminal-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Hong Kong, China
+                        </p>
+                        <p class="terminal-description">Premier air cargo facility connecting Asia-Pacific markets with advanced temperature-controlled storage.</p>
+                        <div class="terminal-features">
+                            <div class="feature-item">
+                                <i class="fas fa-plane-departure"></i>
+                                <span>5M Tons Capacity</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-thermometer-half"></i>
+                                <span>Climate Control</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-clock"></i>
+                                <span>24/7 Operations</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="terminal-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="terminal-image">
+                        <div class="image-placeholder warehouse-terminal">
+                            <i class="fas fa-warehouse"></i>
+                        </div>
+                        <div class="terminal-type">
+                            <span class="type-badge warehouse">Distribution Center</span>
+                        </div>
+                    </div>
+                    <div class="terminal-content">
+                        <h3 class="terminal-name">Chicago Logistics Park</h3>
+                        <p class="terminal-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Chicago, USA
+                        </p>
+                        <p class="terminal-description">Multi-modal distribution center with rail, road, and air connectivity serving North American markets.</p>
+                        <div class="terminal-features">
+                            <div class="feature-item">
+                                <i class="fas fa-expand-arrows-alt"></i>
+                                <span>2M Sq Ft</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-train"></i>
+                                <span>Rail Connected</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-shipping-fast"></i>
+                                <span>Same Day Delivery</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="terminal-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="terminal-image">
+                        <div class="image-placeholder land-terminal">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <div class="terminal-type">
+                            <span class="type-badge land">Land Transport Hub</span>
+                        </div>
+                    </div>
+                    <div class="terminal-content">
+                        <h3 class="terminal-name">Dubai Logistics City</h3>
+                        <p class="terminal-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Dubai, UAE
+                        </p>
+                        <p class="terminal-description">Strategic Middle East gateway connecting Europe, Asia, and Africa with comprehensive logistics services.</p>
+                        <div class="terminal-features">
+                            <div class="feature-item">
+                                <i class="fas fa-globe"></i>
+                                <span>Global Gateway</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Free Zone</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-cogs"></i>
+                                <span>Multi-Modal</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Terminal Capabilities -->
+    <section class="capabilities-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Terminal Capabilities</h2>
+                <p class="section-subtitle">Advanced technologies and services across our network</p>
+            </div>
+            <div class="capabilities-grid">
+                <div class="capability-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="capability-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Automated Systems</h3>
+                    <p>State-of-the-art robotics and AI-powered operations for maximum efficiency and accuracy in cargo handling.</p>
+                    <ul class="capability-features">
+                        <li>Automated cranes and vehicles</li>
+                        <li>AI-powered sorting systems</li>
+                        <li>Robotic warehouse operations</li>
+                        <li>Predictive maintenance</li>
+                    </ul>
+                </div>
+                <div class="capability-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="capability-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Real-time Tracking</h3>
+                    <p>Complete visibility of cargo movement with IoT sensors, GPS tracking, and blockchain-based documentation.</p>
+                    <ul class="capability-features">
+                        <li>GPS and RFID tracking</li>
+                        <li>IoT environmental sensors</li>
+                        <li>Blockchain documentation</li>
+                        <li>Live status updates</li>
+                    </ul>
+                </div>
+                <div class="capability-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="capability-icon">
+                        <i class="fas fa-thermometer-half"></i>
+                    </div>
+                    <h3>Climate Control</h3>
+                    <p>Advanced temperature and humidity management for sensitive cargo including pharmaceuticals and perishables.</p>
+                    <ul class="capability-features">
+                        <li>Multi-zone temperature control</li>
+                        <li>Humidity management</li>
+                        <li>Pharmaceutical-grade storage</li>
+                        <li>Cold chain certification</li>
+                    </ul>
+                </div>
+                <div class="capability-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="capability-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Security Systems</h3>
+                    <p>Comprehensive security measures including biometric access, 24/7 surveillance, and cybersecurity protocols.</p>
+                    <ul class="capability-features">
+                        <li>Biometric access control</li>
+                        <li>24/7 CCTV monitoring</li>
+                        <li>Cybersecurity protection</li>
+                        <li>Cargo screening systems</li>
+                    </ul>
+                </div>
+                <div class="capability-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="capability-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Green Operations</h3>
+                    <p>Sustainable terminal operations with renewable energy, electric equipment, and environmental monitoring.</p>
+                    <ul class="capability-features">
+                        <li>Solar and wind power</li>
+                        <li>Electric cargo equipment</li>
+                        <li>Emission monitoring</li>
+                        <li>Waste reduction programs</li>
+                    </ul>
+                </div>
+                <div class="capability-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="capability-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Customs Integration</h3>
+                    <p>Seamless customs clearance with digital documentation, pre-clearance programs, and trusted trader status.</p>
+                    <ul class="capability-features">
+                        <li>Digital customs processing</li>
+                        <li>Pre-clearance programs</li>
+                        <li>AEO certification</li>
+                        <li>Expedited clearance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Terminal Network Benefits -->
+    <section class="benefits-section">
+        <div class="container">
+            <div class="benefits-content">
+                <div class="benefits-text" data-aos="fade-right">
+                    <h2 class="section-title">Network Advantages</h2>
+                    <p class="benefits-description">Our strategically positioned terminal network provides unmatched connectivity, efficiency, and reliability for global supply chains.</p>
+                    <div class="benefits-list">
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-globe-americas"></i>
+                            </div>
+                            <div class="benefit-content">
+                                <h4>Global Connectivity</h4>
+                                <p>Seamless connections between major trade routes and economic zones</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-tachometer-alt"></i>
+                            </div>
+                            <div class="benefit-content">
+                                <h4>Faster Transit Times</h4>
+                                <p>Optimized operations reducing cargo dwell time and improving delivery speed</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="benefit-content">
+                                <h4>Cost Efficiency</h4>
+                                <p>Economies of scale and operational efficiency reducing overall logistics costs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="benefits-visual" data-aos="fade-left">
+                    <div class="network-diagram">
+                        <div class="central-hub">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <div class="connection-lines">
+                            <div class="connection-line line-1"></div>
+                            <div class="connection-line line-2"></div>
+                            <div class="connection-line line-3"></div>
+                            <div class="connection-line line-4"></div>
+                        </div>
+                        <div class="terminal-nodes">
+                            <div class="terminal-node node-1">
+                                <i class="fas fa-anchor"></i>
+                            </div>
+                            <div class="terminal-node node-2">
+                                <i class="fas fa-plane"></i>
+                            </div>
+                            <div class="terminal-node node-3">
+                                <i class="fas fa-truck"></i>
+                            </div>
+                            <div class="terminal-node node-4">
+                                <i class="fas fa-warehouse"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="terminals-cta">
+        <div class="cta-background">
+            <div class="cta-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2 class="cta-title">Connect to Our Global Network</h2>
+                <p class="cta-subtitle">Access strategic terminals worldwide for your logistics needs</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-large ripple-effect">
+                        <span>Find a Terminal</span>
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="services.html" class="btn btn-outline btn-large ripple-effect">
+                        <span>Our Services</span>
+                        <i class="fas fa-shipping-fast"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-background">
+            <div class="footer-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-shipping-fast"></i>
+                        <span>GlobalLogistics</span>
+                    </div>
+                    <p class="footer-description">Leading the future of global logistics with innovative solutions and exceptional service.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Ocean Freight</a></li>
+                        <li><a href="services.html">Air Freight</a></li>
+                        <li><a href="services.html">Land Transport</a></li>
+                        <li><a href="services.html">Warehousing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="sustainability.html">Sustainability</a></li>
+                        <li><a href="responsibility.html">Responsibility</a></li>
+                        <li><a href="terminals.html">Terminals</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Contact</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@globallogistics.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>1234 Harbor Drive, Port City, PC 12345</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 GlobalLogistics. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/map.js"></script>
+</body>
+</html>

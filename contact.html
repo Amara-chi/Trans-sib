@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - GlobalLogistics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-shipping-fast"></i>
+                <span>GlobalLogistics</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="terminals.html" class="nav-link">Terminals</a>
+                <a href="sustainability.html" class="nav-link">Sustainability</a>
+                <a href="responsibility.html" class="nav-link">Responsibility</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header contact-header">
+        <div class="header-background">
+            <div class="header-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="header-content" data-aos="fade-up">
+                <h1 class="page-title">Get in Touch</h1>
+                <p class="page-subtitle">Ready to optimize your supply chain? Contact our experts today</p>
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span class="separator">/</span>
+                    <span class="current">Contact</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Introduction -->
+    <section class="contact-intro-section">
+        <div class="container">
+            <div class="intro-content" data-aos="fade-up">
+                <h2 class="section-title">Let's Start Your Logistics Journey</h2>
+                <p class="intro-description">Whether you need a shipping quote, want to discuss a complex logistics challenge, or explore partnership opportunities, our team of experts is here to help. Get in touch with us through any of the channels below.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form & Info Section -->
+    <section class="contact-main-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-container" data-aos="fade-right">
+                    <div class="form-header">
+                        <h3>Send us a Message</h3>
+                        <p>Fill out the form below and we'll get back to you within 24 hours</p>
+                    </div>
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <div class="input-container">
+                                    <input type="text" id="firstName" name="firstName" required>
+                                    <label for="firstName" class="floating-label">First Name</label>
+                                    <div class="input-border"></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-container">
+                                    <input type="text" id="lastName" name="lastName" required>
+                                    <label for="lastName" class="floating-label">Last Name</label>
+                                    <div class="input-border"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <div class="input-container">
+                                    <input type="email" id="email" name="email" required>
+                                    <label for="email" class="floating-label">Email Address</label>
+                                    <div class="input-border"></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-container">
+                                    <input type="tel" id="phone" name="phone" required>
+                                    <label for="phone" class="floating-label">Phone Number</label>
+                                    <div class="input-border"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-container">
+                                <input type="text" id="company" name="company">
+                                <label for="company" class="floating-label">Company Name</label>
+                                <div class="input-border"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="select-container">
+                                <select id="service" name="service" required>
+                                    <option value="">Select Service</option>
+                                    <option value="ocean-freight">Ocean Freight</option>
+                                    <option value="air-freight">Air Freight</option>
+                                    <option value="land-transport">Land Transport</option>
+                                    <option value="warehousing">Warehousing</option>
+                                    <option value="customs">Customs & Trade</option>
+                                    <option value="special-cargo">Special Cargo</option>
+                                    <option value="consultation">General Consultation</option>
+                                </select>
+                                <label for="service" class="select-label">Service Interest</label>
+                                <div class="select-border"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="textarea-container">
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                                <label for="message" class="floating-label">Message</label>
+                                <div class="textarea-border"></div>
+                            </div>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-container">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkmark"></span>
+                                <span class="checkbox-text">Subscribe to our newsletter for industry insights and updates</span>
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-large ripple-effect">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="contact-info-container" data-aos="fade-left">
+                    <div class="contact-info-header">
+                        <h3>Contact Information</h3>
+                        <p>Reach out to us through any of these channels</p>
+                    </div>
+                    <div class="contact-cards">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p class="contact-primary">+1 (555) 123-4567</p>
+                                <p class="contact-secondary">Emergency: +1 (555) 123-4568</p>
+                                <p class="contact-note">Available 24/7</p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p class="contact-primary">info@globallogistics.com</p>
+                                <p class="contact-secondary">sales@globallogistics.com</p>
+                                <p class="contact-note">Response within 24 hours</p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Address</h4>
+                                <p class="contact-primary">1234 Harbor Drive</p>
+                                <p class="contact-secondary">Port City, PC 12345</p>
+                                <p class="contact-note">Visit by appointment</p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Business Hours</h4>
+                                <p class="contact-primary">Mon - Fri: 8:00 AM - 6:00 PM</p>
+                                <p class="contact-secondary">Sat: 9:00 AM - 4:00 PM</p>
+                                <p class="contact-note">Emergency support 24/7</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="quick-actions">
+                        <h4>Quick Actions</h4>
+                        <div class="action-buttons">
+                            <a href="#" class="action-btn">
+                                <i class="fas fa-calculator"></i>
+                                <span>Get Quote</span>
+                            </a>
+                            <a href="#" class="action-btn">
+                                <i class="fas fa-search"></i>
+                                <span>Track Shipment</span>
+                            </a>
+                            <a href="#" class="action-btn">
+                                <i class="fas fa-download"></i>
+                                <span>Download Brochure</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Regional Offices -->
+    <section class="regional-offices-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Global Offices</h2>
+                <p class="section-subtitle">Our worldwide presence ensures local expertise and global reach</p>
+            </div>
+            <div class="offices-grid">
+                <div class="office-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="office-header">
+                        <div class="office-flag">🇺🇸</div>
+                        <h3>North America</h3>
+                        <p class="office-city">New York, USA</p>
+                    </div>
+                    <div class="office-details">
+                        <div class="office-contact">
+                            <p><i class="fas fa-phone"></i> +1 (212) 555-0123</p>
+                            <p><i class="fas fa-envelope"></i> americas@globallogistics.com</p>
+                        </div>
+                        <div class="office-services">
+                            <span class="service-tag">Ocean Freight</span>
+                            <span class="service-tag">Air Freight</span>
+                            <span class="service-tag">Land Transport</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="office-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="office-header">
+                        <div class="office-flag">🇬🇧</div>
+                        <h3>Europe</h3>
+                        <p class="office-city">London, UK</p>
+                    </div>
+                    <div class="office-details">
+                        <div class="office-contact">
+                            <p><i class="fas fa-phone"></i> +44 20 7555 0123</p>
+                            <p><i class="fas fa-envelope"></i> europe@globallogistics.com</p>
+                        </div>
+                        <div class="office-services">
+                            <span class="service-tag">Ocean Freight</span>
+                            <span class="service-tag">Rail Transport</span>
+                            <span class="service-tag">Warehousing</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="office-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="office-header">
+                        <div class="office-flag">🇸🇬</div>
+                        <h3>Asia Pacific</h3>
+                        <p class="office-city">Singapore</p>
+                    </div>
+                    <div class="office-details">
+                        <div class="office-contact">
+                            <p><i class="fas fa-phone"></i> +65 6555 0123</p>
+                            <p><i class="fas fa-envelope"></i> apac@globallogistics.com</p>
+                        </div>
+                        <div class="office-services">
+                            <span class="service-tag">Ocean Freight</span>
+                            <span class="service-tag">Air Freight</span>
+                            <span class="service-tag">Special Cargo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="office-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="office-header">
+                        <div class="office-flag">🇦🇪</div>
+                        <h3>Middle East</h3>
+                        <p class="office-city">Dubai, UAE</p>
+                    </div>
+                    <div class="office-details">
+                        <div class="office-contact">
+                            <p><i class="fas fa-phone"></i> +971 4 555 0123</p>
+                            <p><i class="fas fa-envelope"></i> mena@globallogistics.com</p>
+                        </div>
+                        <div class="office-services">
+                            <span class="service-tag">Air Freight</span>
+                            <span class="service-tag">Land Transport</span>
+                            <span class="service-tag">Customs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="contact-faq-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Quick answers to common questions</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-column" data-aos="fade-up" data-aos-delay="100">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>How can I get a shipping quote?</h4>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>You can request a quote through our contact form above, call our sales team, or use our online quote calculator on our website. We'll respond within 4 hours with a detailed quote.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>What information do I need for shipping?</h4>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We need origin and destination details, cargo dimensions and weight, type of goods, preferred service level, and any special handling requirements. Our team will guide you through the process.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>Do you provide tracking services?</h4>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, we provide real-time tracking for all shipments through our digital platform. You'll receive tracking details and regular updates throughout the shipping process.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-column" data-aos="fade-up" data-aos-delay="200">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>What are your payment terms?</h4>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We offer flexible payment terms including credit accounts for established customers, prepayment options, and various payment methods including wire transfers and credit cards.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>Do you handle customs clearance?</h4>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, we provide comprehensive customs brokerage services including documentation preparation, duty calculation, and clearance procedures for import and export shipments.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>What is your response time for emergencies?</h4>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Our emergency response team is available 24/7 and typically responds to urgent situations within 30 minutes. We have dedicated emergency contact numbers for critical issues.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Chat Widget -->
+    <div class="live-chat-widget" id="live-chat">
+        <div class="chat-button" id="chat-button">
+            <i class="fas fa-comments"></i>
+            <span class="chat-notification">1</span>
+        </div>
+        <div class="chat-window" id="chat-window">
+            <div class="chat-header">
+                <div class="chat-avatar">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="chat-info">
+                    <h4>Sarah Wilson</h4>
+                    <p>Customer Service</p>
+                </div>
+                <button class="chat-close" id="chat-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="chat-messages">
+                <div class="chat-message incoming">
+                    <p>Hello! How can I help you with your logistics needs today?</p>
+                    <span class="message-time">Just now</span>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" placeholder="Type your message..." id="chat-input">
+                <button class="send-button">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <section class="contact-cta">
+        <div class="cta-background">
+            <div class="cta-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2 class="cta-title">Ready to Get Started?</h2>
+                <p class="cta-subtitle">Let's discuss how we can optimize your supply chain and reduce your logistics costs</p>
+                <div class="cta-buttons">
+                    <a href="tel:+15551234567" class="btn btn-primary btn-large ripple-effect">
+                        <span>Call Now</span>
+                        <i class="fas fa-phone"></i>
+                    </a>
+                    <a href="mailto:info@globallogistics.com" class="btn btn-outline btn-large ripple-effect">
+                        <span>Send Email</span>
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-background">
+            <div class="footer-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-shipping-fast"></i>
+                        <span>GlobalLogistics</span>
+                    </div>
+                    <p class="footer-description">Leading the future of global logistics with innovative solutions and exceptional service.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Ocean Freight</a></li>
+                        <li><a href="services.html">Air Freight</a></li>
+                        <li><a href="services.html">Land Transport</a></li>
+                        <li><a href="services.html">Warehousing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="sustainability.html">Sustainability</a></li>
+                        <li><a href="responsibility.html">Responsibility</a></li>
+                        <li><a href="terminals.html">Terminals</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Contact</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@globallogistics.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>1234 Harbor Drive, Port City, PC 12345</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 GlobalLogistics. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>

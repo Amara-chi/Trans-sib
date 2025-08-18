@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - GlobalLogistics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-shipping-fast"></i>
+                <span>GlobalLogistics</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link active">Services</a>
+                <a href="terminals.html" class="nav-link">Terminals</a>
+                <a href="sustainability.html" class="nav-link">Sustainability</a>
+                <a href="responsibility.html" class="nav-link">Responsibility</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header services-header">
+        <div class="header-background">
+            <div class="header-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="header-content" data-aos="fade-up">
+                <h1 class="page-title">Comprehensive Logistics Services</h1>
+                <p class="page-subtitle">End-to-end supply chain solutions tailored to your business needs</p>
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span class="separator">/</span>
+                    <span class="current">Services</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="services-overview-section">
+        <div class="container">
+            <div class="overview-content">
+                <div class="overview-text" data-aos="fade-right">
+                    <h2 class="section-title">Complete Supply Chain Solutions</h2>
+                    <p class="overview-description">From ocean freight to last-mile delivery, we provide integrated logistics services that streamline your supply chain, reduce costs, and improve efficiency. Our global network and advanced technology ensure reliable, fast, and cost-effective transportation solutions.</p>
+                    <div class="overview-stats">
+                        <div class="overview-stat">
+                            <h3 class="stat-number" data-count="99.8">0</h3>
+                            <p class="stat-label">% Service Reliability</p>
+                        </div>
+                        <div class="overview-stat">
+                            <h3 class="stat-number" data-count="150">0</h3>
+                            <p class="stat-label">Countries Covered</p>
+                        </div>
+                        <div class="overview-stat">
+                            <h3 class="stat-number" data-count="24">0</h3>
+                            <p class="stat-label">Hours Support</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="overview-visual" data-aos="fade-left">
+                    <div class="services-diagram">
+                        <div class="service-node ocean">
+                            <i class="fas fa-ship"></i>
+                            <span>Ocean</span>
+                        </div>
+                        <div class="service-node air">
+                            <i class="fas fa-plane"></i>
+                            <span>Air</span>
+                        </div>
+                        <div class="service-node land">
+                            <i class="fas fa-truck"></i>
+                            <span>Land</span>
+                        </div>
+                        <div class="service-node warehouse">
+                            <i class="fas fa-warehouse"></i>
+                            <span>Warehouse</span>
+                        </div>
+                        <div class="connecting-lines">
+                            <div class="line line-1"></div>
+                            <div class="line line-2"></div>
+                            <div class="line line-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Categories Tabs -->
+    <section class="service-tabs-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Our Service Portfolio</h2>
+                <p class="section-subtitle">Explore our comprehensive range of logistics solutions</p>
+            </div>
+            <div class="service-tabs" data-aos="fade-up" data-aos-delay="200">
+                <div class="tab-navigation">
+                    <button class="tab-btn active" data-tab="ocean">
+                        <i class="fas fa-ship"></i>
+                        <span>Ocean Freight</span>
+                    </button>
+                    <button class="tab-btn" data-tab="air">
+                        <i class="fas fa-plane"></i>
+                        <span>Air Freight</span>
+                    </button>
+                    <button class="tab-btn" data-tab="land">
+                        <i class="fas fa-truck"></i>
+                        <span>Land Transport</span>
+                    </button>
+                    <button class="tab-btn" data-tab="warehouse">
+                        <i class="fas fa-warehouse"></i>
+                        <span>Warehousing</span>
+                    </button>
+                    <button class="tab-btn" data-tab="customs">
+                        <i class="fas fa-file-alt"></i>
+                        <span>Customs</span>
+                    </button>
+                    <button class="tab-btn" data-tab="special">
+                        <i class="fas fa-star"></i>
+                        <span>Special Cargo</span>
+                    </button>
+                </div>
+                <div class="tab-indicator"></div>
+                
+                <div class="tab-content">
+                    <!-- Ocean Freight Tab -->
+                    <div class="tab-pane active" id="ocean">
+                        <div class="service-content">
+                            <div class="service-info">
+                                <h3>Ocean Freight Services</h3>
+                                <p>Cost-effective sea transportation solutions for large cargo volumes with global reach and reliability. Our ocean freight services connect major ports worldwide with flexible scheduling and competitive rates.</p>
+                                <div class="service-highlights">
+                                    <div class="highlight-item">
+                                        <i class="fas fa-globe"></i>
+                                        <span>Global port network</span>
+                                    </div>
+                                    <div class="highlight-item">
+                                        <i class="fas fa-dollar-sign"></i>
+                                        <span>Cost-effective rates</span>
+                                    </div>
+                                    <div class="highlight-item">
+                                        <i class="fas fa-calendar-alt"></i>
+                                        <span>Flexible scheduling</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service-features">
+                                <div class="feature-category">
+                                    <h4>Container Services</h4>
+                                    <ul>
+                                        <li><i class="fas fa-check"></i> Full Container Load (FCL)</li>
+                                        <li><i class="fas fa-check"></i> Less than Container Load (LCL)</li>
+                                        <li><i class="fas fa-check"></i> Refrigerated containers</li>
+                                        <li><i class="fas fa-check"></i> Open-top containers</li>
+                                        <li><i class="fas fa-check"></i> Flat rack containers</li>
+                                    </ul>
+                                </div>
+                                <div class="feature-category">
+                                    <h4>Value-Added Services</h4>
+                                    <ul>
+                                        <li><i class="fas fa-check"></i> Door-to-door delivery</li>
+                                        <li><i class="fas fa-check"></i> Cargo insurance</li>
+                                        <li><i class="fas fa-check"></i> Real-time tracking</li>
+                                        <li><i class="fas fa-check"></i> Customs clearance</li>
+                                        <li><i class="fas fa-check"></i> Documentation services</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Air Freight Tab -->
+                    <div class="tab-pane" id="air">
+                        <div class="service-content">
+                            <div class="service-info">
+                                <h3>Air Freight Services</h3>
+                                <p>Fast and reliable air cargo services for time-sensitive shipments. Our air freight solutions ensure rapid transit times with comprehensive handling for all cargo types from documents to heavy machinery.</p>
+                                <div class="service-highlights">
+                                    <div class="highlight-item">
+                                        <i class="fas fa-clock"></i>
+                                        <span>Express delivery</span>
+                                    </div>
+                                    <div class="highlight-item">
+                                        <i class="fas fa-shield-alt"></i>
+                                        <span>Secure handling</span>
+                                    </div>
+                                    <div class="highlight-item">
+                                        <i class="fas fa-thermometer-half"></i>
+                                        <span>Temperature control</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service-features">
+                                <div class="feature-category">
+                                    <h4>Air Cargo Solutions</h4>
+                                    <ul>
+                                        <li><i class="fas fa-check"></i> Express air freight</li>
+                                        <li><i class="fas fa-check"></i> Consolidated air freight</li>
+                                        <li><i class="fas fa-check"></i> Charter services</li>
+                                        <li><i class="fas fa-check"></i> Hand-carry services</li>
+                                        <li><i class="fas fa-check"></i> Next flight out (NFO)</li>
+                                    </ul>
+                                </div>
+                                <div class="feature-category">
+                                    <h4>Specialized Handling</h4>
+                                    <ul>
+                                        <li><i class="fas fa-check"></i> Dangerous goods (DG)</li>
+                                        <li><i class="fas fa-check"></i> Perishable cargo</li>
+                                        <li><i class="fas fa-check"></i> Live animals</li>
+                                        <li><i class="fas fa-check"></i> Pharmaceuticals</li>
+                                        <li><i class="fas fa-check"></i> High-value cargo</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Land Transport Tab -->
+                    <div class="tab-pane" id="land">
+                        <div class="service-content">
+                            <div class="service-info">
+                                <h3>Land Transport Services</h3>
+                                <p>Flexible ground transportation solutions across continents with rail and road connectivity. Our land transport services provide efficient overland shipping with comprehensive coverage and reliable delivery schedules.</p>
+                                <div class="service-highlights">
+                                    <div class="highlight-item">
+                                        <i class="fas fa-route"></i>
+                                        <span>Multi-modal options</span>
+                                    </div>
+                                    <div class="highlight-item">
+                                        <i class="fas fa-map-marked-alt"></i>
+                                        <span>Extensive network</span>
+                                    </div>
+                                    <div class="highlight-item">
+                                        <i class="fas fa-leaf"></i>
+                                        <span>Eco-friendly solutions</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service-features">
+                                <div class="feature-category">
+                                    <h4>Road Transport</h4>
+                                    <ul>
+                                        <li><i class="fas fa-check"></i> Full truckload (FTL)</li>
+                                        <li><i class="fas fa-check"></i> Less than truckload (LTL)</li>
+                                        <li><i class="fas fa-check"></i> Cross-border trucking</li>
+                                        <li><i class="fas fa-check"></i> Last-mile delivery</li>
+                                        <li><i class="fas fa-check"></i> Expedited services</li>
+                                    </ul>
+                                </div>
+                                <div class="feature-category">
+                                    <h4>Rail Transport</h4>
+                                    <ul>
+                                        <li><i class="fas fa-check"></i> Container rail services</li>
+                                        <li><i class="fas fa-check"></i> Intermodal solutions</li>
+                                        <li><i class="fas fa-check"></i> Bulk cargo rail</li>
+                                        <li><i class="fas fa-check"></i> Express rail services</li>
+                                        <li><i class="fas fa-check"></i> Rail-road combinations</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Warehousing Tab -->
+                    <div class="tab-pane" id="warehouse">
+                        <div class="service-content">
+                            <div class="service-info">
+                                <h3>Warehousing & Distribution</h3>
+                                <p>Strategic storage and distribution solutions with advanced technology and global coverage. Our warehouse network provides flexible storage options, inventory management, and value-added services for optimal supply chain efficiency.</p>
+                                <div class="service-highlights">
+                                    <div class="highlight-item">
+                                        <i class="fas fa-robot"></i>
+                                        <span>Automated systems</span>
+                                    </div>
+                                    <div class="highlight-item">
+                                        <i class="fas fa-eye"></i>
+                                        <span>Real-time visibility</span>
+                                    </div>
+                                    <div class="highlight-item">
+                                        <i class="fas fa-tools"></i>
+                                        <span>Value-added services</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service-features">
+                                <div class="feature-category">
+                                    <h4>Storage Solutions</h4>
+                                    <ul>
+                                        <li><i class="fas fa-check"></i> Public warehousing</li>
+                                        <li><i class="fas fa-check"></i> Dedicated facilities</li>
+                                        <li><i class="fas fa-check"></i> Climate-controlled storage</li>
+                                        <li><i class="fas fa-check"></i> Bonded warehouses</li>
+                                        <li><i class="fas fa-check"></i> Cross-docking services</li>
+                                    </ul>
+                                </div>
+                                <div class="feature-category">
+                                    <h4>Distribution Services</h4>
+                                    <ul>
+                                        <li><i class="fas fa-check"></i> Order fulfillment</li>
+                                        <li><i class="fas fa-check"></i> Pick and pack</li>
+                                        <li><i class="fas fa-check"></i> Inventory management</li>
+                                        <li><i class="fas fa-check"></i> Returns processing</li>
+                                        <li><i class="fas fa-check"></i> Kitting and assembly</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Customs Tab -->
+                    <div class="tab-pane" id="customs">
+                        <div class="service-content">
+                            <div class="service-info">
+                                <h3>Customs & Trade Compliance</h3>
+                                <p>Expert customs brokerage and trade compliance services ensuring smooth border crossings and regulatory adherence. Our experienced team handles all documentation and clearance procedures for hassle-free international shipping.</p>
+                                <div class="service-highlights">
+                                    <div class="highlight-item">
+                                        <i class="fas fa-certificate"></i>
+                                        <span>Certified brokers</span>
+                                    </div>
+                                    <div class="highlight-item">
+                                        <i class="fas fa-file-contract"></i>
+                                        <span>Complete documentation</span>
+                                    </div>
+                                    <div class="highlight-item">
+                                        <i class="fas fa-handshake"></i>
+                                        <span>Government relations</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service-features">
+                                <div class="feature-category">
+                                    <h4>Customs Services</h4>
+                                    <ul>
+                                        <li><i class="fas fa-check"></i> Import/export clearance</li>
+                                        <li><i class="fas fa-check"></i> Duty optimization</li>
+                                        <li><i class="fas fa-check"></i> Trade consulting</li>
+                                        <li><i class="fas fa-check"></i> AEO certification</li>
+                                        <li><i class="fas fa-check"></i> FTA utilization</li>
+                                    </ul>
+                                </div>
+                                <div class="feature-category">
+                                    <h4>Compliance Management</h4>
+                                    <ul>
+                                        <li><i class="fas fa-check"></i> Regulatory updates</li>
+                                        <li><i class="fas fa-check"></i> Classification services</li>
+                                        <li><i class="fas fa-check"></i> Audit support</li>
+                                        <li><i class="fas fa-check"></i> Risk assessment</li>
+                                        <li><i class="fas fa-check"></i> Training programs</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Special Cargo Tab -->
+                    <div class="tab-pane" id="special">
+                        <div class="service-content">
+                            <div class="service-info">
+                                <h3>Special Cargo Handling</h3>
+                                <p>Specialized transportation solutions for unique cargo requirements including oversized, hazardous, and high-value shipments. Our expert team ensures safe, compliant, and efficient handling of specialized cargo types.</p>
+                                <div class="service-highlights">
+                                    <div class="highlight-item">
+                                        <i class="fas fa-hard-hat"></i>
+                                        <span>Expert handling</span>
+                                    </div>
+                                    <div class="highlight-item">
+                                        <i class="fas fa-shield-alt"></i>
+                                        <span>Safety certified</span>
+                                    </div>
+                                    <div class="highlight-item">
+                                        <i class="fas fa-tools"></i>
+                                        <span>Specialized equipment</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service-features">
+                                <div class="feature-category">
+                                    <h4>Project Cargo</h4>
+                                    <ul>
+                                        <li><i class="fas fa-check"></i> Oversized cargo</li>
+                                        <li><i class="fas fa-check"></i> Heavy lift projects</li>
+                                        <li><i class="fas fa-check"></i> Break bulk cargo</li>
+                                        <li><i class="fas fa-check"></i> Engineering solutions</li>
+                                        <li><i class="fas fa-check"></i> Site surveys</li>
+                                    </ul>
+                                </div>
+                                <div class="feature-category">
+                                    <h4>Specialized Cargo</h4>
+                                    <ul>
+                                        <li><i class="fas fa-check"></i> Dangerous goods</li>
+                                        <li><i class="fas fa-check"></i> Pharmaceuticals</li>
+                                        <li><i class="fas fa-check"></i> Automotive cargo</li>
+                                        <li><i class="fas fa-check"></i> Aerospace components</li>
+                                        <li><i class="fas fa-check"></i> Art and exhibitions</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Comparison Table -->
+    <section class="comparison-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Service Comparison</h2>
+                <p class="section-subtitle">Choose the right logistics solution for your needs</p>
+            </div>
+            <div class="comparison-table-container" data-aos="fade-up" data-aos-delay="200">
+                <div class="table-scroll">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Service Features</th>
+                                <th><i class="fas fa-ship"></i> Ocean Freight</th>
+                                <th><i class="fas fa-plane"></i> Air Freight</th>
+                                <th><i class="fas fa-truck"></i> Land Transport</th>
+                                <th><i class="fas fa-warehouse"></i> Warehousing</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="feature-name">Transit Time</td>
+                                <td>15-45 days</td>
+                                <td>1-7 days</td>
+                                <td>3-15 days</td>
+                                <td>Same day</td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name">Cost Efficiency</td>
+                                <td><span class="rating high">High</span></td>
+                                <td><span class="rating low">Low</span></td>
+                                <td><span class="rating medium">Medium</span></td>
+                                <td><span class="rating medium">Medium</span></td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name">Cargo Volume</td>
+                                <td><span class="rating high">High</span></td>
+                                <td><span class="rating low">Limited</span></td>
+                                <td><span class="rating medium">Medium</span></td>
+                                <td><span class="rating high">Flexible</span></td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name">Environmental Impact</td>
+                                <td><span class="rating high">Low</span></td>
+                                <td><span class="rating low">High</span></td>
+                                <td><span class="rating medium">Medium</span></td>
+                                <td><span class="rating high">Low</span></td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name">Real-time Tracking</td>
+                                <td><i class="fas fa-check text-green"></i></td>
+                                <td><i class="fas fa-check text-green"></i></td>
+                                <td><i class="fas fa-check text-green"></i></td>
+                                <td><i class="fas fa-check text-green"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name">Insurance Coverage</td>
+                                <td><i class="fas fa-check text-green"></i></td>
+                                <td><i class="fas fa-check text-green"></i></td>
+                                <td><i class="fas fa-check text-green"></i></td>
+                                <td><i class="fas fa-check text-green"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name">24/7 Support</td>
+                                <td><i class="fas fa-check text-green"></i></td>
+                                <td><i class="fas fa-check text-green"></i></td>
+                                <td><i class="fas fa-check text-green"></i></td>
+                                <td><i class="fas fa-check text-green"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology & Innovation -->
+    <section class="technology-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Technology & Innovation</h2>
+                <p class="section-subtitle">Leveraging cutting-edge technology for superior logistics performance</p>
+            </div>
+            <div class="technology-grid">
+                <div class="tech-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="tech-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI & Machine Learning</h3>
+                    <p>Predictive analytics and intelligent routing optimize delivery times and reduce costs through advanced algorithms.</p>
+                </div>
+                <div class="tech-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="tech-icon">
+                        <i class="fas fa-link"></i>
+                    </div>
+                    <h3>Blockchain Technology</h3>
+                    <p>Secure, transparent documentation and tracking ensuring data integrity throughout the supply chain.</p>
+                </div>
+                <div class="tech-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="tech-icon">
+                        <i class="fas fa-satellite-dish"></i>
+                    </div>
+                    <h3>IoT Monitoring</h3>
+                    <p>Real-time cargo monitoring with sensors tracking location, temperature, humidity, and security status.</p>
+                </div>
+                <div class="tech-card" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="tech-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Digital Platform</h3>
+                    <p>Comprehensive mobile and web platform providing complete visibility and control over your shipments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="services-cta">
+        <div class="cta-background">
+            <div class="cta-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2 class="cta-title">Ready to Optimize Your Supply Chain?</h2>
+                <p class="cta-subtitle">Get a customized logistics solution tailored to your business needs</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-large ripple-effect">
+                        <span>Get Quote</span>
+                        <i class="fas fa-calculator"></i>
+                    </a>
+                    <a href="contact.html" class="btn btn-outline btn-large ripple-effect">
+                        <span>Contact Sales</span>
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-background">
+            <div class="footer-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-shipping-fast"></i>
+                        <span>GlobalLogistics</span>
+                    </div>
+                    <p class="footer-description">Leading the future of global logistics with innovative solutions and exceptional service.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Ocean Freight</a></li>
+                        <li><a href="services.html">Air Freight</a></li>
+                        <li><a href="services.html">Land Transport</a></li>
+                        <li><a href="services.html">Warehousing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="sustainability.html">Sustainability</a></li>
+                        <li><a href="responsibility.html">Responsibility</a></li>
+                        <li><a href="terminals.html">Terminals</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Contact</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@globallogistics.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>1234 Harbor Drive, Port City, PC 12345</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 GlobalLogistics. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
