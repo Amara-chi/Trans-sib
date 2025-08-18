@@ -1,0 +1,120 @@
+ 
+
+---
+
+## 📌 Website Generation Prompt
+
+**Goal:** Build a multi-page logistics company website using raw HTML, CSS, and JavaScript (no frameworks). Use external libraries where noted (AOS for animations, Leaflet.js for maps, etc.).
+
+### 🔗 Pages to Generate
+
+1. **Homepage (index.html)**
+2. **About Us (about.html)**
+3. **Sustainability (sustainability.html)**
+4. **Responsibility (responsibility.html)**
+5. **Terminals (terminals.html)**
+6. **Services (services.html)**
+7. **Contact (contact.html)**
+
+---
+
+### 🎨 Global Design System
+
+* **Colors**:
+
+  * Primary: `#0A3D91` (Blue)
+  * Secondary: `#58B3FF` (Light Blue)
+  * Accent: `#2ECC71` (Green)
+  * Text Dark: `#2c3e50`
+  * Text Light: `#7f8c8d`
+* **Typography**:
+
+  * Font: **Poppins**
+  * Headings: Bold, large
+  * Body: 1.1rem–1.4rem
+* **Components**:
+
+  * Cards: White BG, rounded corners, shadow, hover lift
+  * Buttons: Blue/green with hover scale + shadow
+  * Navbar: Fixed top, transparent → solid on scroll, mobile overlay menu
+  * Section headers: Underline accent
+
+---
+
+### 📑 Page-Specific Content & Presentation
+
+#### **1. Homepage**
+
+* Hero banner with tagline + CTA
+* Service highlights (3–4 cards with icons)
+* Animated stats counter (JS)
+* Testimonial carousel (JS/Swiper)
+* Final CTA with gradient background
+
+#### **2. About Us**
+
+* Vertical timeline (CSS/JS)
+* Mission/values cards
+* Team grid (photos, social icons)
+* Partner logos (grayscale → color on hover)
+* FAQ accordion (JS toggle)
+
+#### **3. Sustainability**
+
+* Initiative cards with green tags
+* Animated progress bars (green theme)
+* Roadmap timeline (like About but green)
+* Certification badges (circular icons)
+
+#### **4. Responsibility**
+
+* Commitment cards with left-border highlight
+* Animated number counters for safety stats
+* Community program cards (image + text)
+* Progress bars (blue theme)
+
+#### **5. Terminals**
+
+* Interactive Leaflet map with custom markers
+* Terminal cards (fixed-height images + features)
+* Stats grid (4 large numbers with icons)
+
+#### **6. Services**
+
+* Tabbed navigation (JS) for service categories (Ocean, Rail, Air, etc.)
+* Feature lists (icons + text)
+* Responsive comparison table (scroll on mobile)
+
+#### **7. Contact**
+
+* Contact form with floating labels
+* Location cards with icons (phone, email, address)
+* Social media links (footer)
+* Optional live chat widget placeholder
+
+---
+
+### 📱 Responsive Behavior
+
+* Breakpoints: 1200px, 992px, 768px, 576px, 350px 
+* Cards stack on smaller screens
+* Mobile menu replaces navbar
+* Font sizes adjust down progressively
+* Larger tap targets for buttons/links
+
+---
+
+### ⚡ Technical Requirements
+
+* Use **AOS.js** for on-scroll animations
+* Use **Leaflet.js** for interactive map
+* Use **vanilla JS** for interactivity (tabs, FAQ, counters, carousel)
+* Use **lazy loading** for images
+* Ensure accessibility (aria-labels, focus states)
+* Optimize images for web (WebP preferred)
+
+---
+
+👉 This prompt tells the AI to **generate all pages** with **unique content** while sharing the same **style, navbar, and footer**.
+
+Would you like me to now **expand this prompt into ready-to-use starter code for each page** (so you get `index.html`, `about.html`, etc. with placeholders filled), or keep it as a master prompt you can paste into your AI builder?
